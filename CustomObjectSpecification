@@ -1,0 +1,25 @@
+1.Food Donations
+Purpose: Manage data related to food donations.
+Key Fields: Food Type, Quantity, Pickup Location, Expiry Date,Donation Status,food donation name,venue,task.
+Relationships: Connected to Venues and Drop-Off Points for tracking.
+--------------------------------------------------------------------------------------------------
+2.Venues
+Purpose: Track all donation venues.
+Key Fields: Venue Name, Location (Geolocation), Capacity, Venue name,Status,Dropoff point,Email,Contact phone.
+Relationships: Links to dropoff point.
+--------------------------------------------------------------------------------------------------
+3.Drop-Off Points
+Purpose: Document authorized drop-off locations
+Key Fields: Drop-Off Point Name, Acceptable items,Location (Latitude and Longitude), Distance, food specific detail,state,venue.
+Relationships:Connected to Venues for volunteer assignments.
+------------------------------------------------------------------------------------------------------
+4.Volunteers
+Purpose: Store information on volunteers
+Key Fields: Volunteer Name, Contact Information, Assigned Drop-Off Points, Availability,Age,Contact number,Rating.
+Relationships: Linked to Drop-Off Points and Venues for scheduling.
+--------------------------------------------------------------------------------------------------
+5.Task
+Purpose:Manage and track tasks associated with the donation process.
+Key Fields:Name,Date,Distance,Dropoff-point,foodcategory,Food Donation,rating,Task Id,Venue.
+Relationships: Linked to Drop-Off Points and Venues for coordination.
+-------------------------------------------------------------------------------------------------
