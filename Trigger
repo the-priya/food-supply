@@ -1,0 +1,17 @@
+To create the DropOffTrigger trigger in the Developer Console, follow these steps:-
+
+Log into the trailhead account, navigate to the gear icon in the top right corner.
+Click on developer console and you will be navigated to a new console window.
+Click on the File menu in the toolbar, and click on new >> Trigger.
+Enter the trigger name and the object to be triggered.
+Enter Name : DropOffTrigger
+Object: Drop-Off Point
+Click on Submit.
+----------------------------------------------------------------------------------------------------
+Trigger Code:
+
+trigger DropOffTrigger on Drop_Off_point__c (before insert) {
+    for(Drop_Off_point__c Drop : Trigger.new){
+        Drop.Distance__c = Drop.distance_calculation__c;
+    }
+}
