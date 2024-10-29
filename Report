@@ -1,0 +1,28 @@
+Creation of Report Types
+--------------------------------------------------------------------------------------------------------------------------
+Navigate to Report Types:
+Access Setup from Salesforce.
+Enter Report Types, from the Quick Find bar.
+Click on Report Types, then select Continue.
+Create New Custom Report Type:
+Click on New Custom Report Type.
+Define the Custom Report Type:
+Primary Object: Select Venues.
+Report Type Label: Enter Venue with Drop-Off and Volunteer.
+Report Type Name: Enter Venue_with_DropOff_with_Volunteer.
+Description: Enter Details of Venues with Drop-Off and Volunteer Information.
+Store  Category: Choose Other Reports.
+Deployment Status: Set to Deployed.
+Add Related Objects:
+Click Next.
+Near Click to relate another Object, select Drop-Off Points.
+Choose the option "A" records may or may not have related "B" records.
+Click Next.
+Near Click to relate another Object, select Volunteers.
+Save the Report Type:
+Click Save to finalize the report type.
+-------------------------------------------------------------------------------------------------------------------------
+Similarly, Create the Following Reports:
+New Food Donation Report
+New Volunteer History Report
+New Venue and Drop-Off Point Report
