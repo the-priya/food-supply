@@ -1,0 +1,73 @@
+//Flow to Record Venue Details for Food Supply
+
+Step 1: Access Flow Builder
+Navigate to Setup in Salesforce.
+In the Quick Find box, type Flow and select Flows.
+Click on New Flow and choose Screen Flow. Then, click Create.
+
+Step 2: Add Screen Element
+Click the ‘+’ icon between the Start and End elements, then select Screen.
+Set Screen Properties:
+Label: Venue Details
+API Name: Venue_Details
+
+Step 3: Add Input Components
+Add the following components to the screen:
+Venue Name:
+Component Type: Text
+Label: Venue Name
+API Name: Venue_Name
+Contact Email:
+Component Type: Email
+Label: Email
+API Name: Contact_Email
+Contact Phone:
+Component Type: Phone
+Label: Phone
+API Name: Contact_Phone
+Venue Location:
+Component Type: Text
+Label: Venue Location
+API Name: Venue_Location
+Latitude:
+Component Type: Number
+Label: Latitude
+API Name: Latitude
+Longitude:
+Component Type: Number
+Label: Longitude
+API Name: Longitude
+Click Done after adding all components.
+
+Step 4: Add Create Record Element
+Click the ‘+’ icon between the Venue Details screen and the End element.
+Select Create Record.
+Set Properties:
+Label: Create Venue Record
+API Name: Create_Venue_Record
+How Many Records to Create: One
+How to Set the Record Fields: Use separate resources and literal values
+Object: Venue
+
+Step 5: Set Field Values for Venue Record
+Add the following field mappings:
+Field: Contact_Email__c
+Value: {!Contact_Email.value}
+Field: Contact_Phone__c
+Value: {!Contact_Phone.value}
+Field: Name
+Value: {!Venue_Name}
+Field: Location__Latitude__s
+Value: {!Latitude}
+Field: Location__Longitude__s
+Value: {!Longitude}
+Field: Status__c
+Value: {!Status}
+
+Step 6: Save the Flow
+Flow Label: Type Venue Form
+Flow API Name:Venue_Form
+Click Save.
+
+Step 7: Activate the Flow
+After saving, click Activate to make the flow available for users.
