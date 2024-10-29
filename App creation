@@ -1,0 +1,33 @@
+//Access App Manager:
+Go to Setup.
+Search for App Manager in the Quick Find bar and select it.
+Click on New Lightning App.
+App Details and Branding:
+App Name: Enter FoodConnect.
+Developer Name: This will auto-populate.
+Image: Optional (add an image if desired; otherwise, leave blank).
+Primary Color Hex Value: Keep the default value or change it as desired.
+Set Navigation Style:
+Click Next.
+On the App Options page, set Navigation Style to Standard Navigation.
+Click Next.
+Utility Items:
+Keep the utility items as default and click Next.
+Add Navigation Items:
+Search for the following items in the search bar:
+Home
+Venue
+Drop-Off Point
+Task
+Volunteer
+Execution Details
+Reports
+Move the selected items using the arrow button to the right.
+Click Next.
+Add User Profiles:
+Search for the desired profiles in the search bar (e.g., System Administrator).
+Click on the arrow button to add it (you can add more profiles if necessary).
+Click Save & Finish.
+Final Steps:
+Review the new app setup to ensure all configurations are correct.
+Train users on how to navigate and utilize the FoodConnect app effectively
